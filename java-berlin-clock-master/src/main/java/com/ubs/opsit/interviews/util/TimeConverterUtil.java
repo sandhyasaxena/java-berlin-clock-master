@@ -108,13 +108,13 @@ public class TimeConverterUtil {
 			lFirstRowVal=TimeConverterConstants.HOUR_MAX_TIME.substring(0,lDivResult);
 			if(lDivResult<4)
 				lFirstRowVal=lFirstRowVal+TimeConverterConstants.HOUR_DEF_TIME.substring(lDivResult);
-			if(lDivMod>0)
-			{
-				lSecondRowVal=TimeConverterConstants.HOUR_MAX_TIME.substring(0,lDivMod);
-				if(lDivMod<4)
-					lSecondRowVal=lSecondRowVal+TimeConverterConstants.HOUR_DEF_TIME.substring(lDivMod);
-			}
 		} 
+		if(lDivMod>0)
+		{
+			lSecondRowVal=TimeConverterConstants.HOUR_MAX_TIME.substring(0,lDivMod);
+			if(lDivMod<4)
+				lSecondRowVal=lSecondRowVal+TimeConverterConstants.HOUR_DEF_TIME.substring(lDivMod);
+		}
 
 		lResult=lFirstRowVal+TimeConverterConstants.NEW_LINE_PARAM+lSecondRowVal;
 		return lResult;
@@ -144,12 +144,12 @@ public class TimeConverterUtil {
 			lFirstRowVal=TimeConverterConstants.MINUTE_MAXTIME_1ST_ROW.substring(0,lDivResult);
 			if(lDivResult<11)
 				lFirstRowVal=lFirstRowVal+TimeConverterConstants.MINUTE_DEFTIME_1ST_ROW.substring(lDivResult);
-			if(lDivMod>0) {
-				lSecondRowVal=TimeConverterConstants.MINUTE_MAXTIME_2ND_ROW.substring(0,lDivMod);
-				if(lDivMod<4)
-					lSecondRowVal=lSecondRowVal+TimeConverterConstants.MINUTE_DEFTIME_2ND_ROW.substring(lDivMod);
-			}
 		} 
+		if(lDivMod>0) {
+			lSecondRowVal=TimeConverterConstants.MINUTE_MAXTIME_2ND_ROW.substring(0,lDivMod);
+			if(lDivMod<4)
+				lSecondRowVal=lSecondRowVal+TimeConverterConstants.MINUTE_DEFTIME_2ND_ROW.substring(lDivMod);
+		}
 
 		lResult=lFirstRowVal+TimeConverterConstants.NEW_LINE_PARAM+lSecondRowVal;
 		return lResult;
