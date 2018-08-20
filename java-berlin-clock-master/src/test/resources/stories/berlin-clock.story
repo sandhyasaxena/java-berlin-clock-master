@@ -266,6 +266,33 @@ OOOO
 OOOOOOOOOOO
 OOOO
 
+Scenario: Night
+When the time is 02:00:00
+Then the clock should look like
+Y
+OOOO
+RROO
+OOOOOOOOOOO
+OOOO
+
+Scenario: Night
+When the time is 01:13:01
+Then the clock should look like
+O
+OOOO
+ROOO
+YYOOOOOOOOO
+YYYO
+
+Scenario: Night
+When the time is 01:47:01
+Then the clock should look like
+O
+OOOO
+ROOO
+YYRYYRYYROO
+YYOO
+
 Scenario: Afternoon
 When the time is 14:23:00
 Then the clock should look like
@@ -274,6 +301,16 @@ RROO
 RRRR
 YYRYOOOOOOO
 YYYO
+
+
+Scenario: Afternoon
+When the time is 14:02:02
+Then the clock should look like
+Y
+RROO
+RRRR
+OOOOOOOOOOO
+YYOO
 
 Scenario: Afternoon
 When the time is 13:59:57
@@ -328,5 +365,3 @@ RRRR
 RRRR
 OOOOOOOOOOO
 OOOO
-
-
